@@ -1,0 +1,129 @@
+:root{
+    --primary: #FC466B;
+    --secondary:#4A00E0;
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', sans-serif;
+}
+
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #FC466B, #4A00E0);
+}
+
+h3{
+    color: whitesmoke;
+}
+
+.ball{
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(to bottom right, darkblue, blue);
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputfield{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+input {
+    position: absolute;
+    top: 65vh;
+    padding: 15px 50px 15px 15px;
+    font-size: 15px;
+    border-radius: 30px;
+    text-align: left;
+    border: 0;
+    width: 100vh;
+}
+
+input:focus{
+    outline: 3px solid blue;
+}
+
+button{
+    width: 100vh;
+    position: absolute;
+    top: 75vh;
+    padding: 10px 80px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: purple;
+    color: whitesmoke;
+    border-radius: 2px solid gray;
+}
+
+button:hover{
+    background-color: darkblue;
+}
+
+button:active{
+    background-color: black;
+}
+
+#response{
+    width: 70px;
+    color:black;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 50px;
+    color: whitesmoke;
+}
+
+.innerball{
+    width: 140px;
+    height: 140px;
+    background-image: linear-gradient(aqua,blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* media query */
+@media only screen and (max-width: 600px){
+    h4{
+        text-align: center;
+        padding: 5px;
+        margin: 5px;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .ball{
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+    }
+    .innerball{
+            width: 140px;
+            height: 140px;
+            align-items: center;
+            justify-content: center;
+    }
+    input {
+        width: 30vh;
+        padding: 15px 50px 15px 15px;
+    }
+    button{
+        width: 30vh;
+        text-align: center;
+    }
+    .ball{
+        margin-left: 10vh;
+    }
+}
